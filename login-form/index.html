@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" style="--first-color: #12192C; --text-color: #8590AD; --body-font: 'Roboto', sans-serif; --big-font-size: 2rem; --normal-font-size: 0.938rem; --smaller-font-size: 0.875rem;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>PHCET HOSTEL</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+        @media screen and (min-width: 768px) {
+            html { --big-font-size: 2.5rem; --normal-font-size: 1rem; }
+        }
+        *, ::before, ::after { box-sizing: border-box; }
+        :root {
+            --first-color: #12192C;
+            --text-color: #8590AD;
+            --body-font: 'Roboto', sans-serif;
+            --big-font-size: 2rem;
+            --normal-font-size: 0.938rem;
+            --smaller-font-size: 0.875rem;
+        }
+        
+        @media screen and (min-width: 768px) {
+            :root {
+                --big-font-size: 2.5rem;
+                --normal-font-size: 1rem;
+            }
+        }
+    
+
+    </style>
+
+</head>
+<body style="margin: 0; padding: 0; font-family: var(--body-font); color: var(--first-color) ;" >
+    <div class="l-form" style="position: relative; height: 100vh; overflow: hidden;">
+        <div class="shape1" style="position: absolute; width: 200px; height: 200px; border-radius: 50%; top: -7rem; left: -3.5rem; background: linear-gradient(180deg, var(--first-color) 0%, rgba(196,196,196,0) 100%);"></div>
+        <div class="shape2" style="position: absolute; width: 200px; height: 200px; border-radius: 50%; bottom: -6rem; right: -5.5rem; background: linear-gradient(180deg, var(--first-color) 0%, rgba(196,196,196,0) 100%); transform: rotate(180deg);"></div>
+        <div class="form" style="height: 100vh; display: grid;  align-items: center; padding: 0 1rem; margin-left: 900px;" >
+            <img src="/img/authentication.svg" alt="" class="form__img" style="display: block ; width: 700px; position:absolute; left: 70px;">
+
+            <form action="" class="form__content" id="formContent" style="width: 290px;">
+                <h1 class="form__title" style="font-size: var(--big-font-size); font-weight: 500; margin-bottom: 2rem;">Welcome To Phcet Hostel</h1>
+                <div id="formFields">
+                    <div class="form__div form__div-one" style="position: relative; display: grid; grid-template-columns: 7% 93%; margin-bottom: 3rem; padding: .25rem 0; border-bottom: 1px solid var(--text-color);">
+                        <div class="form__icon" style="font-size: 1.5rem; color: var(--text-color); transition: .3s;">
+                            <i class='bx bx-user-circle'></i>
+                        </div>
+                        <div class="form__div-input" style="position: relative;">
+                            <label for="" class="form__label" style="display: block; position: absolute; left: .75rem; top: .25rem; font-size: var(--normal-font-size); color: var(--text-color); transition: .3s;">Email</label>
+                            <input type="email" class="form__input" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; outline: none; background: none; padding: .5rem .75rem; font-size: 1.2rem; color: var(--first-color); transition: .3s;">
+                        </div>
+                    </div>
+                    <div class="form__div" style="position: relative; display: grid; grid-template-columns: 7% 93%; margin-bottom: 30px; padding: .25rem 0; border-bottom: 1px solid var(--text-color);">
+                        <div class="form__icon" style="font-size: 1.5rem; color: var(--text-color); transition: .3s;">
+                            <i class='bx bx-lock'></i>
+                        </div>
+                        <div class="form__div-input" style="position: relative;">
+                            <label for="" class="form__label" style="display: block; position: absolute; left: .75rem; top: .25rem; font-size: var(--normal-font-size); color: var(--text-color); transition: .3s;">Password</label>
+                            <input type="password" class="form__input" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; outline: none; background: none; padding: .5rem .75rem; font-size: 1.2rem; color: var(--first-color); transition: .3s;">
+                        </div>
+                    </div>
+                    <div class="form__div" style="position: relative; display: grid; grid-template-columns: 7% 93%; margin-bottom: 30px; padding: .25rem 0; border-bottom: 1px solid var(--text-color);">
+                        <div class="form__icon" style="font-size: 1.5rem; color: var(--text-color); transition: .3s;">
+                            <i class='bx bx-id-card'></i>
+                        </div>
+                        <div class="form__div-input" style="position: relative;">
+                            <label for="" class="form__label" style="display: block; position: absolute; left: .75rem; top: .25rem; font-size: var(--normal-font-size); color: var(--text-color); transition: .3s;">Hostel ID</label>
+                            <input type="text" class="form__input" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; outline: none; background: none; padding: .5rem .75rem; font-size: 1.2rem; color: var(--first-color); transition: .3s;">
+                        </div>
+                    </div>
+                </div>
+                <input type="button" class="form__button" value="Login" style="width: 100%; padding: 1rem; font-size: var(--normal-font-size); outline: none; border: none; margin-bottom: 3rem; background-color: var(--first-color); color: #fff; border-radius: .5rem; cursor: pointer; transition: .3s;">
+                <p class="form__text" style="font-size: var(--normal-font-size); color: var(--text-color); text-align: center; margin-bottom: 1rem;">New Student?</p>
+                <input type="button" class="form__button" value="Sign In" onclick="showSignInForm()" style="width: 100%; padding: 1rem; font-size: var(--normal-font-size); outline: none; border: none; margin-bottom: 3rem; background-color: var(--first-color); color: #fff; border-radius: .5rem; cursor: pointer; transition: .3s;">
+            </form>
+        </div>
+    </div>
+        <script src="/js/main.js"></script>
+    </body>
+</html>
